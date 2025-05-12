@@ -1,0 +1,24 @@
+{
+  "dataset_name": "ogbg-molpcba",
+  "preprocess": {
+    "norm": [-0.15, -0.2, -0.25, -0.3, -0.35],
+    "power": [[1, 5], [1, 5], [1, 5], [1, 5], [1, 5]]
+  },
+  "hyperparams": {
+    "seeds": [0, 1, 2, 3, 4],
+    "num_workers": 4,
+    "batch_size": 64,
+    "epochs": 15,
+    "learning_rate": 0.0005,
+    "decay_rate": 0.2,
+    "milestones": [5, 10, 15],
+    "weight_decay": 0.01,
+    "warmup_epochs": 5
+  },
+  "architecture": {
+    "layers": 8,
+    "hidden": 384,
+    "pooling": "X",
+    "dropout": 0
+  }
+}

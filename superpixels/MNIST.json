@@ -1,0 +1,21 @@
+{
+  "dataset_name": "MNIST",
+  "preprocess": {
+    "norm": [-0.3, -0.35, -0.4, -0.45],
+    "power": [[1, 3], [1, 3], [1, 3], [1, 3]]
+  },
+  "hyperparams": {
+    "seeds": [0, 1, 2, 3, 4],
+    "num_workers": 4,
+    "batch_size": 16,
+    "epochs": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 0.00001,
+    "warmup_epochs": 5
+  },
+  "architecture": {
+    "layers": 4,
+    "hidden": 160,
+    "pooling": "M"
+  }
+}

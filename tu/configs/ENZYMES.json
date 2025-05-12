@@ -1,0 +1,26 @@
+{
+  "dataset_name": "ENZYMES",
+  "preprocess": {
+    "norm": [-0.2, -0.25, -0.3, -0.35],
+    "power": [[1, 6], [1, 6], [1, 6], [1, 6]],
+    "symmetrize": "Y",
+    "aug_n": [0.4],
+    "aug_coeff": 0.0001
+  },
+  "hyperparams": {
+    "seeds": [1],
+    "num_workers": 8,
+    "batch_size": 64,
+    "epochs": 300,
+    "learning_rate": 0.001,
+    "step_size": 40,
+    "decay_rate": 0.6
+  },
+  "architecture": {
+    "nonlinear": "ReLU",
+    "layers": 6,
+    "hidden": 256,
+    "pooling": "X",
+    "dropout": 0.2
+  }
+}
